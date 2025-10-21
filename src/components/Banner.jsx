@@ -5,7 +5,7 @@ import overlay from "../assets/images/overlay.png";
 const Banner = () => {
   return (
     <>
-      <div
+      <section
         className="main w-full bg-cover bg-center relative"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
@@ -35,7 +35,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
