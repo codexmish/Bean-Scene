@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="py-5 bg-gray-500">
+      <nav className="py-5 absolute top-0 left-0 w-full z-50">
         <div className="main container flex items-center justify-between">
           {/* --------logo------- */}
           <div className="logo">
@@ -47,10 +47,10 @@ const Navbar = () => {
 
           {/* --------reg and login button---- */}
           <div className="buttons flex items-center gap-9">
-            <div className="sin-button w-[100px] h-[45px] flex items-center justify-center bg-transparent text-sm text-text-black font-medium font-playfair rounded-full">
+            <div className="sin-button w-[100px] h-[45px] flex items-center justify-center bg-transparent text-sm text-white font-medium font-playfair rounded-full">
               Sing In
             </div>
-            <div className="sin-button w-[100px] h-[45px] flex items-center justify-center bg-theme text-sm text-white font-medium font-playfair rounded-full">
+            <div className="sin-button w-[100px] h-[45px] flex items-center justify-center bg-theme text-sm text-text-black font-medium font-playfair rounded-full">
               Sing Up
             </div>
           </div>
