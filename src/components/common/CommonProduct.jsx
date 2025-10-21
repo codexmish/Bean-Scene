@@ -3,7 +3,7 @@ import React from "react";
 const CommonProduct = ({ img, head, details, price }) => {
   return (
     <>
-      <div className="w-[280px] h-[388px] bg-gray-100">
+      <div className="w-[280px] h-[388px] bg-pink-bg relative border border-theme">
         <div className="img w-full h-[222px]">
           <img src={img} alt="product image" />
         </div>
@@ -17,6 +17,10 @@ const CommonProduct = ({ img, head, details, price }) => {
           <h2 className="text-[18px] text-cofee font-bold font-playfair">
             {price}
           </h2>
+        </div>
+
+        <div className="sin-button absolute cursor-pointer left-[50%] -translate-x-[50%]  bottom-[-22px] w-[134px] h-[48px] flex items-center justify-center bg-theme text-sm text-text-black font-medium font-playfair rounded-full">
+          Order Now
         </div>
       </div>
     </>

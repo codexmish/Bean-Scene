@@ -3,11 +3,14 @@ import CommonHead from "./common/CommonHead";
 import blast from "../assets/images/coffee_blast.png";
 import CommonProduct from "./common/CommonProduct";
 import capachino from "../assets/images/capachino.png";
+import latte from '../assets/images/latte.png'
+import macchito from '../assets/images/macchiato.png'
+import expresso from '../assets/images/expresso.png'
 
 const Enjoy = () => {
   return (
     <>
-      <div className="relative">
+      <div className="relative pb-[82px]">
         <div className="absolute left-0 top-[-200px]">
           <img src={blast} alt="" />
         </div>
@@ -19,7 +22,7 @@ const Enjoy = () => {
             }
           />
 
-          <div className="products flex items-center justify-between mt-8g">
+          <div className="products flex items-center justify-between mt-8">
             <CommonProduct
               img={capachino}
               head={"Cappuccino"}
@@ -28,22 +31,22 @@ const Enjoy = () => {
             />
 
             <CommonProduct
-              img={capachino}
-              head={"Cappuccino"}
+              img={latte}
+              head={"Chai Latte"}
               details={"Coffee 50% | Milk 50%"}
               price={"$8.50"}
             />
 
             <CommonProduct
-              img={capachino}
-              head={"Cappuccino"}
+              img={macchito}
+              head={"Macchiato"}
               details={"Coffee 50% | Milk 50%"}
               price={"$8.50"}
             />
 
             <CommonProduct
-              img={capachino}
-              head={"Cappuccino"}
+              img={expresso}
+              head={"Expresso"}
               details={"Coffee 50% | Milk 50%"}
               price={"$8.50"}
             />
