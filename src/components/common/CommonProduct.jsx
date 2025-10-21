@@ -1,0 +1,26 @@
+import React from "react";
+
+const CommonProduct = ({ img, head, details, price }) => {
+  return (
+    <>
+      <div className="w-[280px] h-[388px] bg-gray-100">
+        <div className="img w-full h-[222px]">
+          <img src={img} alt="product image" />
+        </div>
+        <div className="pt-[14px] pb-[99px] flex flex-col items-center justify-center gap-2">
+          <h2 className="text-[22px] text-cofee font-bold font-playfair">
+            {head}
+          </h2>
+          <p className="text-base text-text-black font-normal font-playfair">
+            {details}
+          </p>
+          <h2 className="text-[18px] text-cofee font-bold font-playfair">
+            {price}
+          </h2>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default CommonProduct;
