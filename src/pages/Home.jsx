@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Discover from "../components/Discover";
 import Different from "../components/Different";
 import Enjoy from "../components/Enjoy";
+import Chance from "../components/Chance";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Discover/>
       <Enjoy/>
       <Different/>
+      <Chance/>
     </>
   );
 };

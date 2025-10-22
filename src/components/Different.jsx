@@ -5,12 +5,16 @@ import { PiCoffeeBean } from "react-icons/pi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { BsCupHot } from "react-icons/bs";
 import { MdOutlinePriceCheck } from "react-icons/md";
+import blast from "../assets/images/coffee_blast_right.png";
 
 const Different = () => {
   return (
     <>
-      <section>
-        <div className="main mt-10 lg:mt-20 container px-6 lg:px-o">
+      <section className="relative w-full pb-21">
+        <div className="absolute right-0 top-[-200px]">
+          <img src={blast} alt="" />
+        </div>
+        <div className="main mt-15 lg:mt-20 container px-6 lg:px-o">
           <CommonHead
             head={"Why are we different?"}
             pp={"We don't just make your coffee, we make your day!"}
@@ -42,20 +46,17 @@ const Different = () => {
             />
           </div>
 
-
           <div className="flex flex-col items-center">
-
-          <CommonHead
-            pp={
-              "Great ideas start with great coffee, Lets help you achieve that"
-            }
-          />
-          <CommonHead head={"Get started today."} />
-          <div className="mt-6 lg:mt-10 sin-button cursor-pointer w-[100px] h-[45px] flex items-center justify-center bg-theme text-sm text-text-black hover:text-white font-medium font-playfair rounded-full">
+            <CommonHead
+              pp={
+                "Great ideas start with great coffee, Lets help you achieve that"
+              }
+            />
+            <CommonHead head={"Get started today."} />
+            <div className="mt-6 lg:mt-10 sin-button cursor-pointer w-[100px] h-[45px] flex items-center justify-center bg-theme text-sm text-text-black hover:text-white font-medium font-playfair rounded-full">
               Join Us
             </div>
           </div>
-
         </div>
       </section>
     </>
