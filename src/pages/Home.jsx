@@ -4,6 +4,7 @@ import Discover from "../components/Discover";
 import Different from "../components/Different";
 import Enjoy from "../components/Enjoy";
 import Chance from "../components/Chance";
+import Feedback from "../components/Feedback";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Enjoy/>
       <Different/>
       <Chance/>
+      <Feedback/>
     </>
   );
 };
