@@ -1,29 +1,28 @@
 import React from "react";
 import { Link } from "react-router";
 
+export const menuitem = [
+  {
+    menuName: "Home",
+    navLink: "/",
+  },
+  {
+    menuName: "Menu",
+    navLink: "/",
+  },
+  {
+    menuName: "About Us",
+    navLink: "/",
+  },
+  {
+    menuName: "contact Us",
+    navLink: "/",
+  },
+];
 const Navbar = () => {
-  const menuitem = [
-    {
-      menuName: "Home",
-      navLink: "/",
-    },
-    {
-      menuName: "Menu",
-      navLink: "/",
-    },
-    {
-      menuName: "About Us",
-      navLink: "/",
-    },
-    {
-      menuName: "contact Us",
-      navLink: "/",
-    },
-  ];
-
   return (
     <>
-      <nav className="py-5 absolute top-0 left-0 w-full z-50">
+      <nav className="py-5 absolute top-0 left-0 w-full z-50 hidden lg:block">
         <div className="main container flex items-center justify-between">
           {/* --------logo------- */}
           <div className="logo">
