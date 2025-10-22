@@ -3,22 +3,23 @@ import logo from "../assets/images/cofeeFavvvv.png";
 import { GiHamburgerMenu, GiTireIronCross } from "react-icons/gi";
 import { menuitem } from "./Navbar";
 import { Link } from "react-router";
+import whiteFav from '../assets/images/whitefavv.png'
 
 const ResNav = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <>
-      <div className="lg:hidden ">
+      <div className="lg:hidden absolute left-0 top-0 z-50 w-full">
         <div>
           <div className="main flex items-center justify-between px-6 py-6">
             <div className="logo w-6">
-              <img src={logo} alt="logo" />
+              <img src={whiteFav} alt="logo" />
             </div>
 
             <div
               onClick={() => setShowMenu(true)}
-              className="menu cursor-pointer text-cofee text-2xl"
+              className="menu cursor-pointer text-white text-2xl"
             >
               <GiHamburgerMenu />
             </div>
