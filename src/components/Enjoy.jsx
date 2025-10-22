@@ -11,7 +11,7 @@ const Enjoy = () => {
   return (
     <>
       <div className="relative pb-[82px]">
-        <div className="absolute left-0 top-[-200px]">
+        <div className="absolute left-0 top-[-200px] w-[300px] lg:w-[498px]">
           <img src={blast} alt="" />
         </div>
         <div className="container">
@@ -22,7 +22,7 @@ const Enjoy = () => {
             }
           />
 
-          <div className="products flex items-center justify-between mt-8">
+          <div className="products flex flex-wrap items-center justify-center gap-20 lg:gap-0 lg:justify-between mt-10 lg:mt-8">
             <CommonProduct
               img={capachino}
               head={"Cappuccino"}
