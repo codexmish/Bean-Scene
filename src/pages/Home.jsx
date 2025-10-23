@@ -5,6 +5,7 @@ import Different from "../components/Different";
 import Enjoy from "../components/Enjoy";
 import Chance from "../components/Chance";
 import Feedback from "../components/Feedback";
+import Subscribe from "../components/Subscribe";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Different/>
       <Chance/>
       <Feedback/>
+      <Subscribe/>
     </>
   );
 };
